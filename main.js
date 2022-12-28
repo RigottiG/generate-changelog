@@ -66,4 +66,3 @@ async function getChangelogWithRetry(iterator, retries = 3) {
     }
   );
 })();
-

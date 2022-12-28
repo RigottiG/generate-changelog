@@ -1,4 +1,3 @@
-
 function groupBy(collection, property) {
   var i = 0,
     val,
