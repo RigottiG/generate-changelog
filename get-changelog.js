@@ -9,10 +9,9 @@ async function getChangelog(iterator) {
     ],
   });
   const page = await browser.newPage();
-  await page.goto(
-    `https://dev.azure.com/arezzosa/FUTURO_E-COMMERCE/_git/ecommerce-headless/pullrequest/${iterator}`,
-    { waitUntil: "domcontentloaded" }
-  );
+  await page.goto(`${process.env.AZURE_PROJECT_URL}${iterator}`, {
+    waitUntil: "domcontentloaded",
+  });
 
   await page.waitForSelector(
     "a[class='bolt-table-row bolt-list-row first-row single-click-activation v-align-middle']"

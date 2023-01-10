@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const fs = require("fs");
 const groupBy = require("./group-by");
 const getChangelog = require("./get-changelog");

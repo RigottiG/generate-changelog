@@ -2,3 +2,4 @@ node_modules/
 ~/
 user_data_bkp/
 tasks.json
+.env
